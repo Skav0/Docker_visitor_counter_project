@@ -13,9 +13,7 @@ services:
     env_file:
       - .env
     depends_on:
-      redis:
-        condition: 
-          service_healthy
+      - redis
     ports:
       - "5000"
     
