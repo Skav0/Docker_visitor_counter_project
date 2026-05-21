@@ -4,6 +4,9 @@ services:
     container_name: db_cont
     volumes:
       - redis-data:/app/redis
+    env_file:
+      - .env
+
 
 
   web:
