@@ -2,3 +2,9 @@ docker compose build
 
 docker compose run -d 
 
+*****inside the app_cont*****
+
+apt update 
+apt install iputils-ping
+ping redis
+***** ***** ***** ***** *****
