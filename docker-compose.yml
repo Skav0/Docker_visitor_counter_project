@@ -1,0 +1,24 @@
+services:
+  redis:
+    container_name: db_cont
+    volumes:
+      - redis-data:/app/redis
+
+
+  web:
+    container_name: app_cont
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      redis:
+        condition: 
+          service_healthy
+    ports:
+      - "5000"
+    
+
+
+volumes:
+  redis-data:
+  
