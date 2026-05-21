@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-RUN pip install -r requirements
+RUN pip install -r requirements.txt
 
 
 WORKDIR /app
