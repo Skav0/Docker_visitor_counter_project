@@ -135,7 +135,7 @@ def reset_counter():
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DolfinED Visitor Counter</title>
+    <title>Visitor Counter</title>
     <style>
         body {
             background-color: #f4f4f4;
@@ -183,7 +183,7 @@ def reset_counter():
     </style>
 </head>
 <body>
-    <h1>👋 Welcome to DolfinED Academy</h1>
+    <h1>👋 Welcome</h1>
     <div class="counter">
         🔢 Page visited <strong>{{ count }}</strong> times.
         <br>
