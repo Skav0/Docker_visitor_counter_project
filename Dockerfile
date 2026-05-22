@@ -1,13 +1,11 @@
 FROM python:3.13.13-slim
 
 WORKDIR /app
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 
-COPY app.py .
-COPY index.html .
-ENV FLASK_APP=app.py
-
+COPY . .
+ENV FLASK_RUN_HOST=0.0.0.0
 EXPOSE 5000
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run"]
