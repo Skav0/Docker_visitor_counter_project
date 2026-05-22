@@ -11,8 +11,8 @@ services:
 
   web:
     
-    container_name: app_cont
     build: .
+    container_name: app_cont
     env_file:
       - .env
     depends_on:
